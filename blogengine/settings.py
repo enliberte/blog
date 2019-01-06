@@ -25,7 +25,7 @@ SECRET_KEY = '9-@1+gq4+5n4t2yz9mfieo(qadi4!1of@d@=i0vo!v+*1-iv7='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['blog-family-i-love.herokuapp.com']
 
 
 # Application definition
