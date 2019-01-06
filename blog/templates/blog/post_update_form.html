@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block content %}
-    <form action="{{ post.get_update_url }}" class="mb-5 pt-5" method="post">
+    <form action="{{ post.get_update_url }}" class="mb-5 pt-5 mt-5 pb-5" method="post">
         {% csrf_token %}
 
         {% for field in form %}
