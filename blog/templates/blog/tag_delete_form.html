@@ -6,11 +6,12 @@
 
 
 {% block content %}
-    <form action="{{ tag.get_delete_url }}" class="mb-5 pt-5 mt-5 pb-5" method="post">
-        {% csrf_token %}
-        <h3>Are you sure you want to delete <b>"{{ tag.title|title }}"</b></h3>
-        <a href="{{ tag.get_absolute_url }}">Cancel</a>
-        <button type="submit" class="btn btn-danger">Delete</button>
-
-    </form>
+    <div class="mb-5 pt-5 mt-5 pb-5">
+        <form action="{{ tag.get_delete_url }}" class="" method="post">
+            {% csrf_token %}
+            <h3>Are you sure you want to delete <b>"{{ tag.title|title }}"</b></h3>
+            <a href="{{ tag.get_absolute_url }}">Cancel</a>
+            <button type="submit" class="btn btn-danger">Delete</button>
+        </form>
+    </div>
 {% endblock %}
