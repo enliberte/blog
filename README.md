@@ -1,2 +1,0 @@
-# blog
-Blog on Django
